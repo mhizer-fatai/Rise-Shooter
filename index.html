@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rise Shooter</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
+</head>
+<body>
+  <!-- Welcome / Wallet Connection Page -->
+  <div id="welcome-screen">
+    <h1 id="welcome-text">Welcome to Rise Shooter<br>Please Connect Your Wallet</h1>
+    <button id="connect-wallet">Connect Wallet</button>
+    <button id="start-game" style="display:none;">Start Game</button>
+    <div id="transaction-status"></div>
+  </div>
+
+  <!-- Game Container -->
+  <div id="game-container" style="display:none;"></div>
+
+  <!-- Restart Button (used in game over) -->
+  <button id="restart-button" class="restart-btn">Restart Game</button>
+
+  <!-- Optional: Level transition message -->
+  <div id="level-message" style="display:none;"></div>
+
+  <!-- Scripts -->
+  <script src="page.js"></script>
+  <script src="level.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
